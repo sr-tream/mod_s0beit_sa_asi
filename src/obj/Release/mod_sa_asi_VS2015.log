@@ -1,0 +1,172 @@
+﻿  main.cpp
+  Compiling precompiled header.
+  
+  ADE32.cpp
+  BitStream.cpp
+  CDetour.cpp
+  CDirect3DData.cpp
+  GTAfuncs.cpp
+  HookedRakClient.cpp
+  RakClient.cpp
+  ccallhook.cpp
+  cheat.cpp
+  cheat_actor.cpp
+  cheat_funcs.cpp
+  cheat_generic.cpp
+  cheat_hookers.cpp
+  cheat_patches.cpp
+  cheat_samp.cpp
+  cheat_vehRecording.cpp
+  cheat_vehicle.cpp
+  cshortasm.cpp
+  d3drender.cpp
+  debug_classify.cpp
+  Generating Code...
+  Compiling...
+  dumb_menu.cpp
+  C3DMarkerSA.cpp
+  C3DMarkersSA.cpp
+  CAERadioTrackManagerSA.cpp
+  CAnimBlendAssocGroupSA.cpp
+  CAnimBlendAssociationSA.cpp
+  CAnimBlendHierarchySA.cpp
+  CAnimBlendSequenceSA.cpp
+  CAnimBlendStaticAssociationSA.cpp
+  CAnimBlockSA.cpp
+  CAnimManagerSA.cpp
+  CAudioSA.cpp
+  CAutomobileSA.cpp
+  CBikeSA.cpp
+  CBmxSA.cpp
+  CBoatSA.cpp
+  CBuildingSA.cpp
+  CCamSA.cpp
+  CCameraSA.cpp
+  CCarEnterExitSA.cpp
+  Generating Code...
+  Compiling...
+  CCarGeneratorSA.cpp
+  CCheckpointSA.cpp
+  CCheckpointsSA.cpp
+  CCivilianPedSA.cpp
+  CClockSA.cpp
+  CColModelSA.cpp
+  CColPointSA.cpp
+  CControllerConfigManagerSA.cpp
+  CCoronasSA.cpp
+  CDamageManagerSA.cpp
+  CDoorSA.cpp
+  CEntitySA.cpp
+  CEventDamageSA.cpp
+  CEventGroupSA.cpp
+  CEventGunShotSA.cpp
+  CEventListSA.cpp
+  CEventSA.cpp
+  CExplosionManagerSA.cpp
+  CExplosionSA.cpp
+  CFireManagerSA.cpp
+  Generating Code...
+  Compiling...
+  CFireSA.cpp
+  CFontSA.cpp
+  CFxSA.cpp
+  CGameSA.cpp
+  CGarageSA.cpp
+  CGaragesSA.cpp
+  CHandlingEntrySA.cpp
+  CHandlingManagerSA.cpp
+  CHudSA.cpp
+  CKeyGenSA.cpp
+  CMarkerSA.cpp
+  CMenuManagerSA.cpp
+  CModelInfoSA.cpp
+  CMonsterTruckSA.cpp
+  CObjectSA.cpp
+  COffsets.cpp
+  CPadSA.cpp
+  CParticleObjectSA.cpp
+  CParticleSA.cpp
+  CParticleSystemManagerSA.cpp
+  Generating Code...
+  Compiling...
+  CPathFindSA.cpp
+  CPedDamageResponseCalculatorSA.cpp
+  CPedDamageResponseSA.cpp
+  CPedIKSA.cpp
+  CPedIntelligenceSA.cpp
+  CPedModelInfoSA.cpp
+  CPedSA.cpp
+  CPedSoundSA.cpp
+  CPhysicalSA.cpp
+  CPickupSA.cpp
+  CPickupsSA.cpp
+  CPlaneSA.cpp
+  CPlayerInfoSA.cpp
+  CPlayerPedSA.cpp
+  CPoolsSA.cpp
+  CPopulationSA.cpp
+  CProjectileInfoSA.cpp
+  CProjectileSA.cpp
+  CQuadBikeSA.cpp
+  CRadarSA.cpp
+  Generating Code...
+  Compiling...
+  CRegisteredCoronaSA.cpp
+  CRemoteSA.cpp
+  CRenderWareSA.cpp
+  CRestartSA.cpp
+  CRopesSA.cpp
+  CSettingsSA.cpp
+  CStatsSA.cpp
+  CStreamingSA.cpp
+  CTaskManagementSystemSA.cpp
+  CTaskManagerSA.cpp
+  CTasksSA.cpp
+  CTextSA.cpp
+  CTheCarGeneratorsSA.cpp
+  CTrailerSA.cpp
+  CVehicleSA.cpp
+  CVehicleScannerSA.cpp
+  CVisibilityPluginsSA.cpp
+  CWantedSA.cpp
+  CWaterManagerSA.cpp
+  CWaterSA.cpp
+  Generating Code...
+  Compiling...
+  CWeaponInfoSA.cpp
+  CWeaponSA.cpp
+  CWeatherSA.cpp
+  CWorldSA.cpp
+  HeapTrace.cpp
+  HookSystem.cpp
+  StdInc.cpp
+  TaskAttackSA.cpp
+  TaskBasicSA.cpp
+  TaskCarAccessoriesSA.cpp
+  TaskCarSA.cpp
+  TaskGoToSA.cpp
+  TaskIKSA.cpp
+  TaskJumpFallSA.cpp
+  TaskNamesSA.cpp
+  TaskPhysicalResponseSA.cpp
+  TaskSA.cpp
+  TaskSecondarySA.cpp
+  ini.cpp
+  keyhook.cpp
+  Generating Code...
+  Compiling...
+  math_stuff.cpp
+  memsafe.cpp
+  mman.cpp
+  patcher.cpp
+  proxyIDirect3D9.cpp
+  proxyIDirect3DDevice9.cpp
+  samp.cpp
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.dll) does not match the Linker's OutputFile property value (D:\mod_s0beit_sa_asi\bin\mod_s0beit.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1190,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(mod_sa) does not match the Linker's OutputFile property value (mod_s0beit). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa_proxy.lib and object D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa_proxy.exp
+mod_sa_proxy.exp : warning LNK4070: /OUT:mod_s0beit.dll directive in .EXP differs from output filename '../bin/mod_s0beit.asi'; ignoring directive
+  mod_sa_asi_VS2015.vcxproj -> D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.dll
+  mod_sa_asi_VS2015.vcxproj -> D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.pdb (Full PDB)
