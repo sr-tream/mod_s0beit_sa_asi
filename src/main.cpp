@@ -242,7 +242,6 @@ static int init ( void )
 				"We did this so you would read the INI file to see the configurability of mod_sa.\n",
 				"You're a retard.", 0 );
 			ShellExecute( 0, "open", "notepad", M0D_FOLDER INI_FILE, g_szWorkingDirectory, SW_SHOW );
-			return 0;
 		}
 
 		// get SAMP and set g_dwSAMP_Addr
