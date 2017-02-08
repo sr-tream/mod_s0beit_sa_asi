@@ -8,11 +8,11 @@ CCallHook::CCallHook(void *addr, eSafeCall save, uint size, eCodePos pos)
     _inlineAsm = new CShortAsm();
 
     orig_bytes = new byte[size + 1];
-    memsafe::copy(orig_bytes, addr, size);
+    memcpy_safe(orig_bytes, addr, size);
 
     if (pos == cp_before){
         if (orig_bytes[0] == 0xE9)
-            memsafe::set(orig_bytes, 0x90, 5);
+            memset_safe(orig_bytes, 0x90, 5);
         else ModOriginalBytes(reinterpret_cast<uint>(_inlineAsm->getAddr()) + _inlineAsm->getWriteOffset());
         _inlineAsm->insert(orig_bytes, size);
     }
@@ -37,14 +37,14 @@ CCallHook::CCallHook(void *addr, eSafeCall save, uint size, eCodePos pos)
 
     _inlineAsm->jmp(reinterpret_cast<int>(addr) + static_cast<int>(size));
 
-    memsafe::set(addr, 0x90, size);
+    memset_safe(addr, 0x90, size);
     byteValue<uint> v;
     v.value = reinterpret_cast<uint>(_inlineAsm->getAddr()) - (reinterpret_cast<uint>(addr) + 5);
-    memsafe::set(addr, 0xE9, 1);
-    memsafe::set(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 1), v.bytes[0], 1);
-    memsafe::set(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 2), v.bytes[1], 1);
-    memsafe::set(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 3), v.bytes[2], 1);
-    memsafe::set(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 4), v.bytes[3], 1);
+    memset_safe(addr, 0xE9, 1);
+    memset_safe(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 1), v.bytes[0], 1);
+    memset_safe(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 2), v.bytes[1], 1);
+    memset_safe(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 3), v.bytes[2], 1);
+    memset_safe(reinterpret_cast<void*>(reinterpret_cast<uint>(addr) + 4), v.bytes[3], 1);
 }
 
 CCallHook::~CCallHook()

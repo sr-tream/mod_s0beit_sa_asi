@@ -4013,6 +4013,8 @@ HRESULT proxyIDirect3DDevice9::Reset ( D3DPRESENT_PARAMETERS *pPresentationParam
 	// always attempt to reset orig device if we are asked to
 	// since GTA is getting the state of the original device
 	hRes_orig_Reset = origIDirect3DDevice9->Reset( pPresentationParameters );
+	if (*(bool*)0xBA67A4)
+		return hRes_orig_Reset;
 
 	// handle the return from original Reset()
 	if ( hRes_orig_Reset == D3D_OK )
@@ -4102,7 +4104,8 @@ HRESULT proxyIDirect3DDevice9::Present ( CONST RECT *pSourceRect, CONST RECT *pD
 {
 	traceLastFunc( "proxyIDirect3DDevice9::Present()" );
 
-	renderHandler();
+	if (!*(bool*)0xBA67A4)
+		renderHandler();
 
 	// A fog flicker fix for some ATI cards
 	// this is screwing up right not for some reason

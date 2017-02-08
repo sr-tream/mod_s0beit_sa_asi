@@ -216,7 +216,6 @@
 #include "proxyIDirect3DDevice9.h"
 
 #include "mman.h"
-#include "memsafe.h"
 #include "cshortasm.h"
 #include "ccallhook.h"
 

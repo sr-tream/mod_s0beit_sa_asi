@@ -873,7 +873,6 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="ccallhook.h" />
     <ClInclude Include="cshortasm.h" />
-    <ClInclude Include="memsafe.h" />
     <ClInclude Include="mman.h">
       <Filter>sys</Filter>
     </ClInclude>
@@ -1311,7 +1310,6 @@
     </ClCompile>
     <ClCompile Include="ccallhook.cpp" />
     <ClCompile Include="cshortasm.cpp" />
-    <ClCompile Include="memsafe.cpp" />
     <ClCompile Include="mman.cpp">
       <Filter>sys</Filter>
     </ClCompile>

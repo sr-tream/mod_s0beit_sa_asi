@@ -445,9 +445,11 @@ void __stdcall mainloop()
 	initialize = true;
 
 	if (init()) {
-		*(IDirect3DDevice9 **)0xC97C28 = new proxyIDirect3DDevice9(*(IDirect3DDevice9 **)0xC97C28);
 		pDirect3D9 = new proxyIDirect3D9(*(IDirect3D9 **)0xC97C20);
 		*(IDirect3D9 **)0xC97C20 = pDirect3D9;
+		*(IDirect3DDevice9 **)0xC97C28 = new proxyIDirect3DDevice9(*(IDirect3DDevice9 **)0xC97C28);
+		if (set.window_mode && *(byte*)0x746225 != 0x90)
+			toggleWindowedMode();
 	}
 	cheat_patches_installRuntimePatches();
 }

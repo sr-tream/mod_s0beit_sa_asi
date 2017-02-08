@@ -1,9 +1,17 @@
 #ifndef CSHORTASM_H
 #define CSHORTASM_H
 
-/*#include <string>
-#include <map>
-#include "sys/mman.h"*/
+enum eCodePos {
+	cp_skip = 0,
+	cp_before,
+	cp_after
+};
+
+enum eSafeCall {
+	sc_not = 0,
+	sc_registers,
+	sc_flags
+};
 
 typedef unsigned char byte;
 typedef unsigned short ushort;

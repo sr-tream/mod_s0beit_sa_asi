@@ -156,17 +156,15 @@
   Generating Code...
   Compiling...
   math_stuff.cpp
-  memsafe.cpp
   mman.cpp
   patcher.cpp
   proxyIDirect3D9.cpp
   proxyIDirect3DDevice9.cpp
   samp.cpp
   Generating Code...
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.dll) does not match the Linker's OutputFile property value (D:\mod_s0beit_sa_asi\bin\mod_s0beit.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1190,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.asi) does not match the Linker's OutputFile property value (D:\mod_s0beit_sa_asi\bin\mod_s0beit.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(mod_sa) does not match the Linker's OutputFile property value (mod_s0beit). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
      Creating library D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa_proxy.lib and object D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa_proxy.exp
 mod_sa_proxy.exp : warning LNK4070: /OUT:mod_s0beit.dll directive in .EXP differs from output filename '../bin/mod_s0beit.asi'; ignoring directive
-  mod_sa_asi_VS2015.vcxproj -> D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.dll
+  mod_sa_asi_VS2015.vcxproj -> D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.asi
   mod_sa_asi_VS2015.vcxproj -> D:\mod_s0beit_sa_asi\src\\obj\Release\mod_sa.pdb (Full PDB)
