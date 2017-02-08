@@ -1,7 +1,170 @@
-﻿  proxyIDirect3DDevice9.cpp
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(F:\src\\obj\Release\mod_sa.asi) does not match the Linker's OutputFile property value (F:\bin\mod_s0beit.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+﻿  main.cpp
+  Compiling precompiled header.
+  
+  BitStream.cpp
+  ccallhook.cpp
+  cheat_samp.cpp
+  cshortasm.cpp
+  C3DMarkerSA.cpp
+  C3DMarkersSA.cpp
+  CAERadioTrackManagerSA.cpp
+  CAnimBlendAssocGroupSA.cpp
+  CAnimBlendAssociationSA.cpp
+  CAnimBlendHierarchySA.cpp
+  CAnimBlendSequenceSA.cpp
+  CAnimBlendStaticAssociationSA.cpp
+  CAnimBlockSA.cpp
+  CAnimManagerSA.cpp
+  CAudioSA.cpp
+  CAutomobileSA.cpp
+  CBikeSA.cpp
+  CBmxSA.cpp
+  CBoatSA.cpp
+  CBuildingSA.cpp
+  Создание кода...
+  Компиляция...
+  CCameraSA.cpp
+  CCamSA.cpp
+  CCarEnterExitSA.cpp
+  CCarGeneratorSA.cpp
+  CCheckpointSA.cpp
+  CCheckpointsSA.cpp
+  CCivilianPedSA.cpp
+  CClockSA.cpp
+  CColModelSA.cpp
+  CColPointSA.cpp
+  CControllerConfigManagerSA.cpp
+  CCoronasSA.cpp
+  CDamageManagerSA.cpp
+  CDoorSA.cpp
+  CEntitySA.cpp
+  CEventDamageSA.cpp
+  CEventGroupSA.cpp
+  CEventGunShotSA.cpp
+  CEventListSA.cpp
+  CEventSA.cpp
+  Создание кода...
+  Компиляция...
+  CExplosionManagerSA.cpp
+  CExplosionSA.cpp
+  CFireManagerSA.cpp
+  CFireSA.cpp
+  CFontSA.cpp
+  CFxSA.cpp
+  CGameSA.cpp
+  CGarageSA.cpp
+  CGaragesSA.cpp
+  CHandlingEntrySA.cpp
+  CHandlingManagerSA.cpp
+  CHudSA.cpp
+  CKeyGenSA.cpp
+  CMarkerSA.cpp
+  CMenuManagerSA.cpp
+  CModelInfoSA.cpp
+  CMonsterTruckSA.cpp
+  CObjectSA.cpp
+  COffsets.cpp
+  CPadSA.cpp
+  Создание кода...
+  Компиляция...
+  CParticleObjectSA.cpp
+  CParticleSA.cpp
+  CParticleSystemManagerSA.cpp
+  CPathFindSA.cpp
+  CPedDamageResponseCalculatorSA.cpp
+  CPedDamageResponseSA.cpp
+  CPedIKSA.cpp
+  CPedIntelligenceSA.cpp
+  CPedModelInfoSA.cpp
+  CPedSA.cpp
+  CPedSoundSA.cpp
+  CPhysicalSA.cpp
+  CPickupSA.cpp
+  CPickupsSA.cpp
+  CPlaneSA.cpp
+  CPlayerInfoSA.cpp
+  CPlayerPedSA.cpp
+  CPoolsSA.cpp
+  CPopulationSA.cpp
+  CProjectileInfoSA.cpp
+  Создание кода...
+  Компиляция...
+  CProjectileSA.cpp
+  CQuadBikeSA.cpp
+  CRadarSA.cpp
+  CRegisteredCoronaSA.cpp
+  CRemoteSA.cpp
+  CRenderWareSA.cpp
+  CRestartSA.cpp
+  CRopesSA.cpp
+  CSettingsSA.cpp
+  CStatsSA.cpp
+  CStreamingSA.cpp
+  CTaskManagementSystemSA.cpp
+  CTaskManagerSA.cpp
+  CTasksSA.cpp
+  CTextSA.cpp
+  CTheCarGeneratorsSA.cpp
+  CTrailerSA.cpp
+  CVehicleSA.cpp
+  CVehicleScannerSA.cpp
+  CVisibilityPluginsSA.cpp
+  Создание кода...
+  Компиляция...
+  CWantedSA.cpp
+  CWaterManagerSA.cpp
+  CWaterSA.cpp
+  CWeaponInfoSA.cpp
+  CWeaponSA.cpp
+  CWeatherSA.cpp
+  CWorldSA.cpp
+  HeapTrace.cpp
+  HookSystem.cpp
+  StdInc.cpp
+  TaskAttackSA.cpp
+  TaskBasicSA.cpp
+  TaskCarAccessoriesSA.cpp
+  TaskCarSA.cpp
+  TaskGoToSA.cpp
+  TaskIKSA.cpp
+  TaskJumpFallSA.cpp
+  TaskNamesSA.cpp
+  TaskPhysicalResponseSA.cpp
+  TaskSA.cpp
+  Создание кода...
+  Компиляция...
+  TaskSecondarySA.cpp
+  ADE32.cpp
+  CDetour.cpp
+  cheat.cpp
+  cheat_actor.cpp
+  cheat_funcs.cpp
+  cheat_generic.cpp
+  cheat_hookers.cpp
+  cheat_patches.cpp
+  cheat_vehicle.cpp
+  cheat_vehRecording.cpp
+  debug_classify.cpp
+  dumb_menu.cpp
+  GTAfuncs.cpp
+  HookedRakClient.cpp
+  ini.cpp
+  keyhook.cpp
+  math_stuff.cpp
+  mman.cpp
+  patcher.cpp
+  Создание кода...
+  Компиляция...
+  RakClient.cpp
+  samp.cpp
+  CDirect3DData.cpp
+  d3drender.cpp
+  proxyIDirect3D9.cpp
+  proxyIDirect3DDevice9.cpp
+  Создание кода...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(H:\src\\obj\Release\mod_sa.asi) does not match the Linker's OutputFile property value (H:\bin\mod_s0beit.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(mod_sa) does not match the Linker's OutputFile property value (mod_s0beit). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-     Создается библиотека F:\src\\obj\Release\mod_sa_proxy.lib и объект F:\src\\obj\Release\mod_sa_proxy.exp
+     Создается библиотека H:\src\\obj\Release\mod_sa_proxy.lib и объект H:\src\\obj\Release\mod_sa_proxy.exp
 mod_sa_proxy.exp : warning LNK4070: директива /OUT:mod_s0beit.dll в .EXP отличается от имени выходного файла "../bin/mod_s0beit.asi"; директива игнорируется
-  mod_sa_asi_VS2015.vcxproj -> F:\src\\obj\Release\mod_sa.asi
-  mod_sa_asi_VS2015.vcxproj -> F:\src\\obj\Release\mod_sa.pdb (Full PDB)
+  mod_sa_asi_VS2015.vcxproj -> H:\src\\obj\Release\mod_sa.asi
+  mod_sa_asi_VS2015.vcxproj -> H:\src\\obj\Release\mod_sa.pdb (Full PDB)
