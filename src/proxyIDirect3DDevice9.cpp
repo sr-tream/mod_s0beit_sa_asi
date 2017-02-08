@@ -3880,8 +3880,6 @@ no_render: ;
 		render->EndRender();
 	}
 
-	mapMenuTeleport();
-
 	traceLastFunc( "it_wasnt_us()" );
 }
 
@@ -4106,6 +4104,7 @@ HRESULT proxyIDirect3DDevice9::Present ( CONST RECT *pSourceRect, CONST RECT *pD
 
 	if (!*(bool*)0xBA67A4)
 		renderHandler();
+	else mapMenuTeleport();
 
 	// A fog flicker fix for some ATI cards
 	// this is screwing up right not for some reason

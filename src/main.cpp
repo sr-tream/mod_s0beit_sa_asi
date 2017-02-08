@@ -447,6 +447,7 @@ void __stdcall mainloop()
 	if (init()) {
 		pDirect3D9 = new proxyIDirect3D9(*(IDirect3D9 **)0xC97C20);
 		*(IDirect3D9 **)0xC97C20 = pDirect3D9;
+		pPresentParam = *(D3DPRESENT_PARAMETERS*)0xC9C040;
 		*(IDirect3DDevice9 **)0xC97C28 = new proxyIDirect3DDevice9(*(IDirect3DDevice9 **)0xC97C28);
 		if (set.window_mode && *(byte*)0x746225 != 0x90)
 			toggleWindowedMode();
