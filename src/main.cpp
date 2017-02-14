@@ -449,20 +449,6 @@ void __stdcall mainloop()
 		*(IDirect3D9 **)0xC97C20 = pDirect3D9;
 		pPresentParam = *(D3DPRESENT_PARAMETERS*)0xC9C040;
 		*(IDirect3DDevice9 **)0xC97C28 = new proxyIDirect3DDevice9(*(IDirect3DDevice9 **)0xC97C28);
-		if (set.window_mode && *(byte*)0x746225 != 0x90)
-		{
-			int x, y;
-			x = GetSystemMetrics(SM_CXSCREEN);
-			y = GetSystemMetrics(SM_CYSCREEN);
-			SetWindowLong(pPresentParam.hDeviceWindow, GWL_STYLE, WS_POPUP);
-			MoveWindow(pPresentParam.hDeviceWindow, (x / 2) - (pPresentParam.BackBufferWidth / 2),
-				(y / 2) - (pPresentParam.BackBufferHeight / 2), pPresentParam.BackBufferWidth,
-				pPresentParam.BackBufferHeight, TRUE);
-
-			pPresentParam.Windowed = true;
-			pPresentParam.FullScreen_RefreshRateInHz = D3DPRESENT_RATE_DEFAULT;
-			toggleWindowedMode();
-		}
 	}
 	cheat_patches_installRuntimePatches();
 }

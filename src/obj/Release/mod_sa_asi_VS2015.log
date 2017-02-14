@@ -1,10 +1,29 @@
 ﻿  main.cpp
   Compiling precompiled header.
   
+  ADE32.cpp
   BitStream.cpp
+  CDetour.cpp
+  CDirect3DData.cpp
+  GTAfuncs.cpp
+  HookedRakClient.cpp
+  RakClient.cpp
   ccallhook.cpp
+  cheat.cpp
+  cheat_actor.cpp
+  cheat_funcs.cpp
+  cheat_generic.cpp
+  cheat_hookers.cpp
+  cheat_patches.cpp
   cheat_samp.cpp
+  cheat_vehRecording.cpp
+  cheat_vehicle.cpp
   cshortasm.cpp
+  d3drender.cpp
+  debug_classify.cpp
+  Создание кода...
+  Компиляция...
+  dumb_menu.cpp
   C3DMarkerSA.cpp
   C3DMarkersSA.cpp
   CAERadioTrackManagerSA.cpp
@@ -21,11 +40,11 @@
   CBmxSA.cpp
   CBoatSA.cpp
   CBuildingSA.cpp
+  CCamSA.cpp
+  CCameraSA.cpp
+  CCarEnterExitSA.cpp
   Создание кода...
   Компиляция...
-  CCameraSA.cpp
-  CCamSA.cpp
-  CCarEnterExitSA.cpp
   CCarGeneratorSA.cpp
   CCheckpointSA.cpp
   CCheckpointsSA.cpp
@@ -43,11 +62,11 @@
   CEventGunShotSA.cpp
   CEventListSA.cpp
   CEventSA.cpp
-  Создание кода...
-  Компиляция...
   CExplosionManagerSA.cpp
   CExplosionSA.cpp
   CFireManagerSA.cpp
+  Создание кода...
+  Компиляция...
   CFireSA.cpp
   CFontSA.cpp
   CFxSA.cpp
@@ -65,11 +84,11 @@
   CObjectSA.cpp
   COffsets.cpp
   CPadSA.cpp
-  Создание кода...
-  Компиляция...
   CParticleObjectSA.cpp
   CParticleSA.cpp
   CParticleSystemManagerSA.cpp
+  Создание кода...
+  Компиляция...
   CPathFindSA.cpp
   CPedDamageResponseCalculatorSA.cpp
   CPedDamageResponseSA.cpp
@@ -87,11 +106,11 @@
   CPoolsSA.cpp
   CPopulationSA.cpp
   CProjectileInfoSA.cpp
-  Создание кода...
-  Компиляция...
   CProjectileSA.cpp
   CQuadBikeSA.cpp
   CRadarSA.cpp
+  Создание кода...
+  Компиляция...
   CRegisteredCoronaSA.cpp
   CRemoteSA.cpp
   CRenderWareSA.cpp
@@ -109,11 +128,11 @@
   CVehicleSA.cpp
   CVehicleScannerSA.cpp
   CVisibilityPluginsSA.cpp
-  Создание кода...
-  Компиляция...
   CWantedSA.cpp
   CWaterManagerSA.cpp
   CWaterSA.cpp
+  Создание кода...
+  Компиляция...
   CWeaponInfoSA.cpp
   CWeaponSA.cpp
   CWeatherSA.cpp
@@ -131,36 +150,17 @@
   TaskNamesSA.cpp
   TaskPhysicalResponseSA.cpp
   TaskSA.cpp
-  Создание кода...
-  Компиляция...
   TaskSecondarySA.cpp
-  ADE32.cpp
-  CDetour.cpp
-  cheat.cpp
-  cheat_actor.cpp
-  cheat_funcs.cpp
-  cheat_generic.cpp
-  cheat_hookers.cpp
-  cheat_patches.cpp
-  cheat_vehicle.cpp
-  cheat_vehRecording.cpp
-  debug_classify.cpp
-  dumb_menu.cpp
-  GTAfuncs.cpp
-  HookedRakClient.cpp
   ini.cpp
   keyhook.cpp
+  Создание кода...
+  Компиляция...
   math_stuff.cpp
   mman.cpp
   patcher.cpp
-  Создание кода...
-  Компиляция...
-  RakClient.cpp
-  samp.cpp
-  CDirect3DData.cpp
-  d3drender.cpp
   proxyIDirect3D9.cpp
   proxyIDirect3DDevice9.cpp
+  samp.cpp
   Создание кода...
 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(H:\src\\obj\Release\mod_sa.asi) does not match the Linker's OutputFile property value (H:\bin\mod_s0beit.asi). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(mod_sa) does not match the Linker's OutputFile property value (mod_s0beit). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).

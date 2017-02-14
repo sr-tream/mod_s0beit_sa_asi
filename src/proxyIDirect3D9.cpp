@@ -153,20 +153,6 @@ HRESULT __stdcall proxyIDirect3D9::CreateDevice ( UINT Adapter, D3DDEVTYPE Devic
 
 	ulFullScreenRefreshRate = pPresentationParameters->FullScreen_RefreshRateInHz;
 
-	if ( set.window_mode && *(byte*)0x746225 != 0x90 )
-	{
-		int x, y;
-		x = GetSystemMetrics( SM_CXSCREEN );
-		y = GetSystemMetrics( SM_CYSCREEN );
-		SetWindowLong( pPresentationParameters->hDeviceWindow, GWL_STYLE, WS_POPUP );
-		MoveWindow( pPresentationParameters->hDeviceWindow, (x / 2) - (pPresentationParameters->BackBufferWidth / 2),
-					(y / 2) - (pPresentationParameters->BackBufferHeight / 2), pPresentationParameters->BackBufferWidth,
-					pPresentationParameters->BackBufferHeight, TRUE );
-
-		pPresentationParameters->Windowed = true;
-		pPresentationParameters->FullScreen_RefreshRateInHz = D3DPRESENT_RATE_DEFAULT;
-	}
-
 	hRes = origIDirect3D9->CreateDevice( Adapter, DeviceType, hFocusWindow, BehaviorFlags, pPresentationParameters,
 										 ppReturnedDeviceInterface );
 

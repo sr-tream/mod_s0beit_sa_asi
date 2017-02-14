@@ -301,8 +301,6 @@ struct settings
 	int						anti_carjacking;
 
 	// ignored because of the function being removed
-	int						window_mode;
-	int						window_mode_titlebar;
 
 	int						flickering_problem;
 

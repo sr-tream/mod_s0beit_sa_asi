@@ -866,13 +866,7 @@ static void ini_init ( void )
 		ini_register_data( ent, &set.key_render_vehicle_tags, "h" );
 	if ( (ent = ini_register_entry("vehicle_tags_dist", TYPE_FLOAT)) != NULL )
 		ini_register_data( ent, &set.vehicle_tags_dist, "100.0" );
-
-	/* window mode */
-	if ( (ent = ini_register_entry("window_mode", TYPE_BOOL)) != NULL )
-		ini_register_data( ent, &set.window_mode, "false" );
-	if ( (ent = ini_register_entry("window_mode_titlebar", TYPE_BOOL)) != NULL )
-		ini_register_data( ent, &set.window_mode_titlebar, "true" );
-
+	
 	if ( (ent = ini_register_entry("flickering_problem", TYPE_BOOL)) != NULL )
 		ini_register_data( ent, &set.flickering_problem, "false" );
 

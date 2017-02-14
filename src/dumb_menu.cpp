@@ -2025,9 +2025,6 @@ static int menu_callback_misc ( int op, struct menu_item *item )
 
 		case ID_MISC_FPSLIMIT:
 			return 0;
-
-		case ID_MISC_TOGGLEWINDOWED:
-			return set.window_mode;
 		}
 	}
 	else if ( op == MENU_OP_SELECT )
@@ -2059,10 +2056,6 @@ static int menu_callback_misc ( int op, struct menu_item *item )
 
 		case ID_MISC_TRAILERS:
 			set.trailer_support ^= 1;
-			break;
-
-		case ID_MISC_TOGGLEWINDOWED:
-			toggleWindowedMode();
 			break;
 
 		default:
@@ -3508,7 +3501,6 @@ void menu_maybe_init ( void )
 	menu_item_add( menu_misc, menu_hudindicators, "Toggle HUD indicators", ID_NONE, MENU_COLOR_DEFAULT, NULL );
 	snprintf( name, sizeof(name), "FPS limit: %d", set.fps_limit );
 	menu_item_add( menu_misc, NULL, name, ID_MISC_FPSLIMIT, MENU_COLOR_DEFAULT, NULL );
-	menu_item_add( menu_misc, NULL, "Toggle windowed mode", ID_MISC_TOGGLEWINDOWED, MENU_COLOR_DEFAULT, NULL );
 #ifdef __CHEAT_VEHRECORDING_H__
 	menu_item_add( menu_misc, menu_routes, "Routes", ID_NONE, MENU_COLOR_DEFAULT, NULL );
 #endif
