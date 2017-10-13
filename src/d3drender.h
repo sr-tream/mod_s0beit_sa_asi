@@ -154,6 +154,7 @@ private:
 	DWORD					m_dwCreateFlags;
 
 	bool					m_isReady;
+    bool                    m_isInit;
 
 	IDirect3DTexture9		*m_pD3Dtex;
 	IDirect3DVertexBuffer9	*m_pD3Dbuf;
@@ -202,5 +203,6 @@ private:
 	int						m_curVertex;
 
 	bool					m_canRender;
+    bool                    m_isInit;
 };
 #endif

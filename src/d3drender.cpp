@@ -219,6 +219,7 @@ CD3DFont::CD3DFont ( const char *szFontName, int fontHeight, DWORD dwCreateFlags
 
 	m_isReady = false;
 	m_statesOK = false;
+    m_isInit = false;
 
 	m_pD3Dtex = NULL;
 	m_pD3Dbuf = NULL;
@@ -237,6 +238,8 @@ CD3DFont::CD3DFont ( const char *szFontName, int fontHeight, DWORD dwCreateFlags
 CD3DFont::~CD3DFont ()
 {
 	Invalidate();
+	SAFE_RELEASE( m_pD3Dtex );
+	SAFE_RELEASE( m_pD3Dbuf );
 }
 
 /* god, what a mess */
@@ -250,6 +253,12 @@ HRESULT CD3DFont::Initialize ( IDirect3DDevice9 *pD3Ddev )
 
 	if ( FAILED(m_pRender->Initialize(pD3Ddev)) )
 		return E_FAIL;
+    
+    if (m_isInit){
+        m_isReady = true;
+        return S_OK;
+    }
+        
 
 	m_texWidth = m_texHeight = 1024;
 
@@ -258,7 +267,7 @@ HRESULT CD3DFont::Initialize ( IDirect3DDevice9 *pD3Ddev )
 		return E_FAIL;
 
 	if ( FAILED(m_pD3Ddev->CreateVertexBuffer(m_maxTriangles * 3 * sizeof(d3dvertex_s),
-				 D3DUSAGE_WRITEONLY | D3DUSAGE_DYNAMIC, 0, D3DPOOL_DEFAULT, &m_pD3Dbuf, NULL)) )
+				 D3DUSAGE_WRITEONLY, 0, D3DPOOL_MANAGED, &m_pD3Dbuf, NULL)) )
 	{
 		SAFE_RELEASE( m_pD3Dtex );
 		return E_FAIL;
@@ -409,6 +418,7 @@ HRESULT CD3DFont::Initialize ( IDirect3DDevice9 *pD3Ddev )
 	DeleteObject( hFont );
 
 	m_isReady = true;
+    m_isInit = true;
 
 	return S_OK;
 }
@@ -417,8 +427,6 @@ HRESULT CD3DFont::Invalidate ()
 {
 	m_isReady = false;
 
-	SAFE_RELEASE( m_pD3Dtex );
-	SAFE_RELEASE( m_pD3Dbuf );
 
 	//SAFE_RELEASE(m_pD3DstateDraw);
 	//SAFE_RELEASE(m_pD3DstateNorm);
@@ -619,6 +627,7 @@ size_t CD3DFont::GetCharPos( const char *text, float x, bool noColorFormat ) con
 CD3DRender::CD3DRender ( int numVertices )
 {
 	m_canRender = false;
+    m_isInit = false;
 
 	m_pD3Dbuf = NULL;
 	m_pVertex = NULL;
@@ -635,6 +644,8 @@ CD3DRender::CD3DRender ( int numVertices )
 CD3DRender::~CD3DRender ()
 {
 	Invalidate();
+	SAFE_RELEASE( m_pD3Dbuf );
+	SAFE_RELEASE( m_texture );
 }
 
 HRESULT CD3DRender::Initialize ( IDirect3DDevice9 *pD3Ddev )
@@ -643,11 +654,14 @@ HRESULT CD3DRender::Initialize ( IDirect3DDevice9 *pD3Ddev )
 	{
 		if ( FAILED(CD3DBaseRender::Initialize(pD3Ddev)) )
 			return E_FAIL;
-		if ( FAILED(m_pD3Ddev->CreateVertexBuffer(m_maxVertex * sizeof(d3dvertex_s),
-					 D3DUSAGE_WRITEONLY | D3DUSAGE_DYNAMIC, 0, D3DPOOL_DEFAULT, &m_pD3Dbuf, NULL)) )
-			return E_FAIL;
+        if (!m_isInit){
+            if ( FAILED(m_pD3Ddev->CreateVertexBuffer(m_maxVertex * sizeof(d3dvertex_s),
+                        D3DUSAGE_WRITEONLY, 0, D3DPOOL_MANAGED, &m_pD3Dbuf, NULL)) )
+                return E_FAIL;
+        }
 
 		m_canRender = true;
+        m_isInit = true
 	}
 
 	return S_OK;
@@ -655,8 +669,6 @@ HRESULT CD3DRender::Initialize ( IDirect3DDevice9 *pD3Ddev )
 
 HRESULT CD3DRender::Invalidate ()
 {
-	SAFE_RELEASE( m_pD3Dbuf );
-	SAFE_RELEASE( m_texture );
 	m_pVertex = NULL;
 
 	//SAFE_RELEASE(m_pD3DstateDraw);
